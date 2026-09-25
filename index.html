@@ -75,6 +75,9 @@ body{height:100%;-webkit-text-size-adjust:100%;touch-action:manipulation;margin:
   86%{transform:scaleY(.84) scaleX(1)}
   100%{transform:scaleY(1) scaleX(1);filter:brightness(1)}
 }
+
+.letter-photo{display:block;width:min(100%,300px);height:auto;max-height:390px;object-fit:cover;margin:0 auto 20px;border:3px solid #b9782e;border-radius:14px;box-shadow:0 8px 22px rgba(90,45,10,.28);background:#ead09a}
+.open .letter-photo{animation:fade 1s .25s both}
 .paper h2{margin:0 0 14px;font:600 clamp(28px,7vw,36px)/1.2 'Dancing Script',cursive;color:var(--gold)}
 .paper p{margin:0 0 24px;font-size:clamp(16px,4.2vw,18px);line-height:1.7;max-width:34ch;margin-inline:auto}
 .open .paper p{animation:fade 1s .5s both}
@@ -221,6 +224,7 @@ button:focus-visible{outline:3px solid #fff;outline-offset:2px}
 <div class="card" role="dialog" aria-modal="true" aria-labelledby="wt">
   <div class="paper">
     <h2 id="wt">Lời chúc Trung Thu</h2>
+    <img class="letter-photo" id="letterPhoto" src="anh-la-thu.jpg" alt="Ảnh trong lá thư">
     <p id="wish"></p>
     <div class="btns"><button id="close">Đóng</button></div>
   </div>
